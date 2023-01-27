@@ -2,10 +2,10 @@
 #include <stdlib.h>
 #include "sorting.h"
 
-int Isprime(int a){
-  if(a==1) return 0;
-  for(int i=2;i<a;i++){
-    if(a%i==0) return 0;
+int Isprime(int num){
+  if(num==1) return 0;
+  for(int i=2;i<num;i++){
+    if(num%i==0) return 0;
   }
   return 1;
 }
@@ -23,7 +23,7 @@ int i,*a,n,*prime;
       j++;
     }
   }
-  if(j==0) printf("no prime\n");
+  if(j==0) printf("No prime\n");
   else{
   n=j;
   display(prime,n);
