@@ -1,12 +1,12 @@
 compile: main.c 
-	 gcc  main.c -o bubble
+	 gcc  main.c -o insertion
 
 runSelection: selection
 	  ./selection
 
-run: bubble
-	 ./bubble
+run: insertion
+	 ./insertion
 
 
-clean: bubble
-	 rm bubble
+clean: insertion
+	 rm insertion

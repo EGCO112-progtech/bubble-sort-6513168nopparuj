@@ -2,14 +2,6 @@
 #include <stdlib.h>
 #include "sorting.h"
 
-int Isprime(int num){
-  if(num==1) return 0;
-  for(int i=2;i<num;i++){
-    if(num%i==0) return 0;
-  }
-  return 1;
-}
-
 int main(int argc , char *argv[]) {
 int i,*a,n,*prime;
   n=argc-1;
@@ -23,17 +15,21 @@ int i,*a,n,*prime;
       j++;
     }
   }
-  if(j==0) printf("No prime\n");
+  display(a,n);
+  insertionsort(a,n);
+  //selectionSort(a, n);
+  /*if(j==0) printf("No prime\n");
   else{
   n=j;
   display(prime,n);
   bubbleSort(prime,n); 
-   //insertion(a,N);
+   
 
-  // selectionSort(a,N);
+  selectionSort(a,n);
    display(prime,n);
-  }
+  }*/
  return 0;
 }
+
 
 
